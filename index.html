@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nand Kishor | CCTV & Surveillance Professional</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#1d2939;
+    line-height:1.6;
+}
+
+header{
+    background:#071a33;
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#35a7ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#35a7ff;
+}
+
+.hero{
+    background:linear-gradient(135deg,#071a33,#123e69);
+    color:white;
+    padding:110px 7%;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero h1{
+    font-size:54px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:25px;
+    font-weight:normal;
+    color:#35a7ff;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#d9e4ef;
+    max-width:750px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.button{
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:6px;
+    background:#149bea;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.button:hover{
+    background:#087ec4;
+}
+
+section{
+    padding:75px 7%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.title h2{
+    font-size:36px;
+    color:#071a33;
+}
+
+.title p{
+    color:#667085;
+    margin-top:8px;
+}
+
+.about{
+    background:white;
+}
+
+.about-content{
+    max-width:950px;
+    margin:auto;
+}
+
+.about-content p{
+    font-size:17px;
+    color:#475467;
+    margin-bottom:18px;
+}
+
+.highlight{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-top:35px;
+}
+
+.box{
+    background:#f5f8fc;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    border:1px solid #e1e7ef;
+}
+
+.box h3{
+    font-size:28px;
+    color:#0b67a5;
+}
+
+.box p{
+    color:#667085;
+    font-size:14px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 5px 18px rgba(0,0,0,0.06);
+}
+
+.icon{
+    font-size:40px;
+}
+
+.card h3{
+    color:#123e69;
+    margin:12px 0;
+}
+
+.card p{
+    color:#667085;
+}
+
+.experience{
+    background:#eef4f9;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.timeline-item{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-left:5px solid #149bea;
+    border-radius:6px;
+}
+
+.timeline-item h3{
+    color:#123e69;
+}
+
+.timeline-item p{
+    color:#667085;
+}
+
+.projects{
+    background:white;
+}
+
+.project-card{
+    background:#f7f9fc;
+    padding:28px;
+    border-radius:10px;
+    border:1px solid #e0e6ed;
+}
+
+.project-card h3{
+    color:#123e69;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    color:#667085;
+}
+
+.skills{
+    background:#071a33;
+    color:white;
+}
+
+.skills .title h2{
+    color:white;
+}
+
+.skill-list{
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
+
+.skill{
+    padding:12px 18px;
+    border:1px solid #406080;
+    border-radius:25px;
+    background:#102b4b;
+}
+
+.contact{
+    background:#f5f7fa;
+}
+
+.contact-box{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.07);
+}
+
+.contact-box p{
+    margin:12px;
+    color:#475467;
+}
+
+footer{
+    background:#04101f;
+    color:#aebdcb;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:850px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav{
+        text-align:center;
+    }
+
+    nav a{
+        margin:5px;
+        display:inline-block;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .services{
+        grid-template-columns:1fr;
+    }
+
+    .highlight{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:500px){
+
+    .highlight{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
+        padding:70px 7%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+Nand <span>Kishor</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Nand Kishor</h1>
+
+<h2>Manager – Head Surveillance</h2>
+
+<p>
+CCTV & Surveillance Professional with 8+ years of experience
+in CCTV systems, security infrastructure, project execution,
+commissioning, VMS, AI video analytics and remote monitoring solutions.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="button">
+Contact Me
+</a>
+
+<a href="#projects" class="button">
+View Projects
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="title">
+
+<h2>About Me</h2>
+
+<p>Professional CCTV & Surveillance Management</p>
+
+</div>
+
+
+<div class="about-content">
+
+<p>
+I am a CCTV and Surveillance professional with more than
+8 years of experience in surveillance systems, security
+infrastructure, project execution and system commissioning.
+</p>
+
+<p>
+My experience includes CCTV project planning, installation,
+configuration, testing, commissioning, VMS integration,
+control room operations, AI video analytics and vendor/client
+coordination.
+</p>
+
+<p>
+I have worked on large-scale surveillance infrastructure
+including railway security CCTV projects and warehouse
+surveillance environments.
+</p>
+
+
+<div class="highlight">
+
+<div class="box">
+<h3>8+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="box">
+<h3>CCTV</h3>
+<p>Surveillance Systems</p>
+</div>
+
+<div class="box">
+<h3>AI</h3>
+<p>Video Analytics</p>
+</div>
+
+<div class="box">
+<h3>VMS</h3>
+<p>Centralized Monitoring</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="title">
+
+<h2>Professional Services</h2>
+
+<p>End-to-end surveillance and security technology solutions.</p>
+
+</div>
+
+
+<div class="services">
+
+
+<div class="card">
+
+<div class="icon">📹</div>
+
+<h3>CCTV Surveillance</h3>
+
+<p>
+CCTV system planning, installation, configuration,
+testing, commissioning and maintenance for IP and
+analog surveillance systems.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤖</div>
+
+<h3>AI Video Analytics</h3>
+
+<p>
+AI-based human and vehicle detection, intrusion,
+line crossing, loitering, fire/smoke detection and
+other intelligent surveillance analytics.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🖥️</div>
+
+<h3>VMS & Control Room</h3>
+
+<p>
+Centralized VMS, live monitoring, playback,
+alarm management, video export and control-room
+surveillance operations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">☀️</div>
+
+<h3>Solar CCTV Solutions</h3>
+
+<p>
+Solar-powered CCTV systems for remote warehouses
+and locations with limited or unavailable grid power.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔐</div>
+
+<h3>Access Control</h3>
+
+<p>
+Access control and security system solutions
+for offices, warehouses and infrastructure sites.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📡</div>
+
+<h3>4G Remote Monitoring</h3>
+
+<p>
+4G-based connectivity, remote surveillance,
+cloud monitoring and alerts for remote CCTV sites.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section class="experience" id="experience">
+
+<div class="title">
+
+<h2>Experience</h2>
+
+<p>Project Execution & Surveillance Management</p>
+
+</div>
+
+
+<div class="timeline">
+
+
+<div class="timeline-item">
+
+<h3>Surveillance Management</h3>
+
+<p>
+Managing CCTV surveillance requirements, site coordination,
+system health monitoring, access management and centralized
+monitoring operations.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Project Execution & Commissioning</h3>
+
+<p>
+Planning, execution, installation, configuration,
+testing, commissioning and handover of CCTV and
+security infrastructure projects.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Vendor & Client Coordination</h3>
+
+<p>
+Coordination with vendors, clients, field teams and
+operations teams for project execution, troubleshooting,
+documentation and service requirements.
+</p>
+
+</div>
+
+
+<div class="timeline-item">
+
+<h3>Documentation & Reporting</h3>
+
+<p>
+Experience with project documentation including BOQ,
+DPR, WIR, testing reports, handover documentation
+and surveillance system records.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+
+<div class="title">
+
+<h2>Project Experience</h2>
+
+<p>Selected areas of professional experience</p>
+
+</div>
+
+
+<div class="services">
+
+
+<div class="project-card">
+
+<h3>🚆 Railway Station CCTV Security</h3>
+
+<p>
+CCTV surveillance infrastructure for railway station
+security environments, including system implementation,
+monitoring and coordination with project stakeholders.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>🏭 Warehouse Surveillance</h3>
+
+<p>
+Warehouse CCTV surveillance, remote monitoring,
+camera health monitoring and centralized surveillance
+solutions for distributed locations.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>🤖 AI Analytics Deployment</h3>
+
+<p>
+Surveillance analytics requirements including human and
+vehicle detection, intrusion, line crossing, fire/smoke
+and operational monitoring use cases.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>☀️ Solar & Remote CCTV</h3>
+
+<p>
+Design and deployment planning for solar-powered CCTV,
+4G connectivity, remote monitoring and backup power
+solutions at remote sites.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>🖥️ Central Control Room</h3>
+
+<p>
+Centralized CCTV monitoring, VMS integration, live view,
+playback, alerts, incident monitoring and remote site
+management.
+</p>
+
+</div>
+
+
+<div class="project-card">
+
+<h3>🔧 CCTV System Integration</h3>
+
+<p>
+Integration and coordination of multi-brand CCTV systems,
+NVR/DVR, networking, VMS and remote access solutions.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section class="skills" id="skills">
+
+<div class="title">
+
+<h2>Technology & Skills</h2>
+
+<p>Surveillance technologies and project management skills</p>
+
+</div>
+
+
+<div class="skill-list">
+
+<div class="skill">CCTV Surveillance</div>
+<div class="skill">IP CCTV</div>
+<div class="skill">Analog CCTV</div>
+<div class="skill">AI Video Analytics</div>
+<div class="skill">VMS</div>
+<div class="skill">NVR / DVR</div>
+<div class="skill">ONVIF</div>
+<div class="skill">Access Control</div>
+<div class="skill">Control Room</div>
+<div class="skill">Remote Monitoring</div>
+<div class="skill">Solar CCTV</div>
+<div class="skill">4G Connectivity</div>
+<div class="skill">Project Execution</div>
+<div class="skill">Commissioning</div>
+<div class="skill">Vendor Coordination</div>
+<div class="skill">Client Coordination</div>
+<div class="skill">BOQ / DPR</div>
+<div class="skill">Testing & HOTO</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="title">
+
+<h2>Contact Me</h2>
+
+<p>For CCTV, Surveillance & Security Technology requirements</p>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>Nand Kishor</h3>
+
+<p><strong>Manager – Head Surveillance</strong></p>
+
+<p>📞 6376720848</p>
+
+<p>✉️ nand.kishor@staragri.com</p>
+
+<p>📍 Mission Compound, Ajmer Road, Jaipur, Rajasthan – 302001</p>
+
+<br>
+
+<a href="tel:6376720848" class="button">
+Call Me
+</a>
+
+<a href="mailto:nand.kishor@staragri.com" class="button">
+Email Me
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+© 2026 Nand Kishor | Smart Technology
+</p>
+
+<p>
+CCTV • Surveillance • AI Analytics • VMS • Security Solutions
+</p>
+
+</footer>
+
+
+</body>
+</html>
