@@ -1,742 +1,1509 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Smart Technology | CCTV & Surveillance Solutions | Nand Kishor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Smart Technology provides CCTV surveillance, AI video analytics, VMS, control room, solar CCTV, 4G remote monitoring and security system solutions. Managed by Nand Kishor, Manager – Head Surveillance.">
+    <title>Smart Technology | CCTV, VSS, VMS & AI Surveillance Solutions</title>
 
-<meta name="keywords" content="CCTV, CCTV Surveillance, AI Video Analytics, VMS, Control Room, Solar CCTV, 4G CCTV, Access Control, NVR, DVR, ONVIF, Security Systems, Nand Kishor, Smart Technology, Jaipur">
+    <meta name="description" content="Smart Technology provides professional CCTV surveillance, Railway VSS, Smart City surveillance, Airport security, Toll operations, Warehouse surveillance, AI video analytics, VMS, Command & Control Centre and remote monitoring solutions.">
 
-<meta name="author" content="Nand Kishor - Smart Technology">
+    <meta name="keywords" content="CCTV surveillance, Railway VSS, Smart City surveillance, Airport CCTV, Toll operations, Warehouse CCTV, AI video analytics, VMS, Command Control Centre, ANPR, PTZ camera, Solar CCTV, 4G CCTV, security systems">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
+    <meta name="author" content="Smart Technology">
 
-body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f7fb;
-    color:#172033;
-    line-height:1.6;
-}
+    <meta name="robots" content="index, follow">
 
-header{
-    background:#071a36;
-    color:white;
-    padding:16px 6%;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    box-shadow:0 3px 15px rgba(0,0,0,.2);
-}
+    <meta property="og:title" content="Smart Technology | Surveillance & Security Solutions">
+    <meta property="og:description" content="CCTV, VSS, VMS, AI Video Analytics, Command Centre, Railway, Smart City, Airport, Toll and Warehouse Surveillance Solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smarttechnology0848.github.io/smart-technology/">
 
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
+    <style>
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-.logo span{
-    color:#27a9ff;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1b263b;
+            background: #f7f9fc;
+        }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:22px;
-    font-size:15px;
-}
+        a {
+            text-decoration: none;
+        }
 
-nav a:hover{
-    color:#27a9ff;
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-.hero{
-    background:linear-gradient(135deg,#071a36,#0b4f8a);
-    color:white;
-    padding:100px 6%;
-}
+        /* NAVBAR */
 
-.hero-content{
-    max-width:1200px;
-    margin:auto;
-}
+        header {
+            background: #071a33;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+        }
 
-.hero h1{
-    font-size:52px;
-    margin-bottom:10px;
-}
+        .navbar {
+            min-height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 25px;
+        }
 
-.hero h2{
-    font-size:26px;
-    font-weight:normal;
-    color:#d8ecff;
-}
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: .5px;
+        }
 
-.hero p{
-    max-width:750px;
-    margin:20px 0;
-    font-size:18px;
-    color:#e8f3ff;
-}
+        .logo span {
+            color: #35b7ff;
+        }
 
-.buttons{
-    margin-top:28px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 22px;
+        }
 
-.btn{
-    display:inline-block;
-    padding:13px 24px;
-    margin-right:10px;
-    border-radius:7px;
-    text-decoration:none;
-    font-weight:bold;
-    background:#27a9ff;
-    color:white;
-}
+        nav ul li a {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            transition: .3s;
+        }
 
-.btn:hover{
-    opacity:.85;
-}
+        nav ul li a:hover {
+            color: #35b7ff;
+        }
 
-.btn-outline{
-    background:transparent;
-    border:1px solid white;
-}
+        /* HERO */
 
-section{
-    padding:75px 6%;
-}
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(rgba(4,19,39,.88), rgba(4,19,39,.88)),
+                radial-gradient(circle at top right, #124b77, #071a33 55%);
+            color: white;
+        }
 
-.container{
-    max-width:1200px;
-    margin:auto;
-}
+        .hero-content {
+            max-width: 850px;
+            padding: 90px 0;
+        }
 
-.section-title{
-    text-align:center;
-    margin-bottom:45px;
-}
+        .tag {
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,.35);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 22px;
+            color: #bfe9ff;
+        }
 
-.section-title h2{
-    font-size:34px;
-    color:#071a36;
-}
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.12;
+            margin-bottom: 25px;
+        }
 
-.section-title p{
-    color:#667085;
-    margin-top:8px;
-}
+        .hero h1 span {
+            color: #35b7ff;
+        }
 
-.about{
-    background:white;
-}
+        .hero p {
+            font-size: 19px;
+            color: #d8e5f2;
+            max-width: 780px;
+            margin-bottom: 32px;
+        }
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
-.about-box{
-    background:#f5f7fb;
-    padding:30px;
-    border-radius:12px;
-    border-left:5px solid #27a9ff;
-}
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: .3s;
+        }
 
-.about-box h3{
-    color:#071a36;
-    margin-bottom:12px;
-}
+        .btn-primary {
+            background: #1597e5;
+            color: white;
+        }
 
-.stats{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
-    margin-top:25px;
-}
+        .btn-primary:hover {
+            background: #087fc6;
+        }
 
-.stat{
-    background:#071a36;
-    color:white;
-    padding:20px;
-    text-align:center;
-    border-radius:10px;
-}
+        .btn-outline {
+            border: 1px solid #8fdcff;
+            color: white;
+        }
 
-.stat strong{
-    display:block;
-    font-size:27px;
-    color:#27a9ff;
-}
+        .btn-outline:hover {
+            background: white;
+            color: #071a33;
+        }
 
-.services-grid,
-.projects-grid,
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:22px;
-}
+        /* COMMON */
 
-.card{
-    background:white;
-    padding:28px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
-    transition:.3s;
-}
+        section {
+            padding: 85px 0;
+        }
 
-.card:hover{
-    transform:translateY(-5px);
-}
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-.card h3{
-    color:#071a36;
-    margin-bottom:10px;
-}
+        .section-title small {
+            color: #0787cf;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
 
-.card p{
-    color:#667085;
-}
+        .section-title h2 {
+            font-size: 36px;
+            margin: 8px 0 12px;
+            color: #10233d;
+        }
 
-.icon{
-    font-size:34px;
-    margin-bottom:12px;
-}
+        .section-title p {
+            max-width: 750px;
+            margin: auto;
+            color: #637083;
+        }
 
-.experience{
-    background:white;
-}
+        /* ABOUT */
 
-.timeline{
-    max-width:900px;
-    margin:auto;
-}
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
 
-.timeline-item{
-    border-left:4px solid #27a9ff;
-    padding:0 0 30px 25px;
-    margin-bottom:10px;
-}
+        .about-text h3 {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
 
-.timeline-item h3{
-    color:#071a36;
-}
+        .about-text p {
+            color: #59677a;
+            margin-bottom: 16px;
+        }
 
-.contact{
-    background:#071a36;
-    color:white;
-}
+        .about-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(12,35,64,.08);
+            border-left: 5px solid #1597e5;
+        }
 
-.contact-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-}
+        .about-box h3 {
+            margin-bottom: 15px;
+        }
 
-.contact-card{
-    background:#0c294f;
-    padding:30px;
-    border-radius:12px;
-}
+        .check-list {
+            list-style: none;
+        }
 
-.contact-card p{
-    margin:12px 0;
-}
+        .check-list li {
+            margin: 12px 0;
+            color: #445368;
+        }
 
-.contact-card a{
-    color:#65c2ff;
-    text-decoration:none;
-}
+        .check-list li::before {
+            content: "✓";
+            color: #0787cf;
+            font-weight: bold;
+            margin-right: 10px;
+        }
 
-footer{
-    background:#041126;
-    color:#b9c7d8;
-    text-align:center;
-    padding:22px;
-    font-size:14px;
-}
+        /* INDUSTRIES */
 
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25d366;
-    color:white;
-    padding:15px 20px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 5px 15px rgba(0,0,0,.25);
-    z-index:2000;
-}
+        .industries {
+            background: #eef5fb;
+        }
 
-@media(max-width:800px){
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
 
-    nav{
-        display:none;
-    }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(20,45,75,.07);
+            transition: .3s;
+            border: 1px solid #e4edf5;
+        }
 
-    .hero h1{
-        font-size:38px;
-    }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(20,45,75,.12);
+        }
 
-    .hero h2{
-        font-size:21px;
-    }
+        .icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e7f5ff;
+            border-radius: 10px;
+            font-size: 25px;
+            margin-bottom: 18px;
+        }
 
-    .about-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
+        .card h3 {
+            margin-bottom: 10px;
+            color: #142943;
+        }
 
-    .services-grid,
-    .projects-grid,
-    .skills-grid{
-        grid-template-columns:1fr;
-    }
+        .card p {
+            color: #667487;
+            font-size: 15px;
+        }
 
-    .stats{
-        grid-template-columns:1fr;
-    }
+        /* SOLUTIONS */
 
-    section{
-        padding:55px 5%;
-    }
-}
-</style>
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .solution {
+            background: #071a33;
+            color: white;
+            padding: 27px;
+            border-radius: 10px;
+            min-height: 190px;
+        }
+
+        .solution h3 {
+            margin: 12px 0;
+        }
+
+        .solution p {
+            color: #c4d4e4;
+            font-size: 14px;
+        }
+
+        /* TECHNOLOGY */
+
+        .technology {
+            background: #f1f6fa;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        .tech {
+            background: white;
+            border: 1px solid #dce7f0;
+            padding: 12px 18px;
+            border-radius: 25px;
+            font-weight: 600;
+            color: #27425f;
+        }
+
+        /* PROJECTS */
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e0e8ef;
+            box-shadow: 0 7px 25px rgba(20,45,75,.06);
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            color: #102c4c;
+        }
+
+        .project p {
+            color: #667487;
+        }
+
+        /* SERVICES */
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service {
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e1eaf2;
+        }
+
+        .service h3 {
+            margin-bottom: 8px;
+        }
+
+        .service p {
+            color: #69788b;
+            font-size: 14px;
+        }
+
+        /* PROFILE */
+
+        .profile {
+            background: #071a33;
+            color: white;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .profile h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .profile p {
+            color: #cad8e6;
+            margin-bottom: 15px;
+        }
+
+        .experience-box {
+            background: rgba(255,255,255,.08);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .experience-number {
+            font-size: 52px;
+            font-weight: 800;
+            color: #35b7ff;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            background: #eef5fb;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(20,45,75,.07);
+        }
+
+        .contact-item {
+            margin: 18px 0;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #142943;
+            margin-bottom: 4px;
+        }
+
+        .contact-item a {
+            color: #0787cf;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #041326;
+            color: #b9c8d8;
+            padding: 35px 0;
+        }
+
+        .footer-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .footer-brand {
+            max-width: 500px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #b9c8d8;
+            margin-left: 18px;
+        }
+
+        .footer-links a:hover {
+            color: #35b7ff;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,.1);
+            margin-top: 25px;
+            padding-top: 22px;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width: 900px) {
+
+            nav ul {
+                gap: 10px;
+            }
+
+            nav ul li a {
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .cards,
+            .solution-grid,
+            .service-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid,
+            .profile-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media(max-width: 650px) {
+
+            .navbar {
+                padding: 15px 0;
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                min-height: auto;
+            }
+
+            .hero-content {
+                padding: 70px 0;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 29px;
+            }
+
+            .cards,
+            .solution-grid,
+            .service-list,
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .footer-links a {
+                margin: 0 10px 0 0;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
-<div class="navbar">
+    <div class="container navbar">
 
-<div class="logo">
-Smart <span>Technology</span>
-</div>
+        <a href="#home" class="logo">
+            Smart<span>Technology</span>
+        </a>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#industries">Industries</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-</div>
+    </div>
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
-<div class="hero-content">
 
-<h1>Nand Kishor</h1>
+    <div class="container hero-content">
 
-<h2>Manager – Head Surveillance</h2>
+        <span class="tag">
+            SURVEILLANCE • SECURITY • TECHNOLOGY
+        </span>
 
-<p>
-Professional in CCTV Surveillance, Security Systems, AI Video Analytics,
-VMS, Control Room Operations, Project Execution and Remote Monitoring
-Solutions with 8+ years of experience.
-</p>
+        <h1>
+            Integrated <span>Surveillance & Security</span> Solutions
+        </h1>
 
-<div class="buttons">
-<a class="btn" href="tel:+916376720848">📞 Call Me</a>
+        <p>
+            Professional CCTV, VSS, VMS, AI Video Analytics,
+            Command & Control Centre, Remote Monitoring and
+            Integrated Security Technology Solutions.
+        </p>
 
-<a class="btn" href="mailto:nand.kishor@staragri.com">✉ Email Me</a>
+        <div class="buttons">
 
-<a class="btn btn-outline"
-href="https://wa.me/916376720848"
-target="_blank">💬 WhatsApp</a>
-</div>
+            <a href="#solutions" class="btn btn-primary">
+                Explore Solutions
+            </a>
 
-</div>
+            <a href="#contact" class="btn btn-outline">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
 
-<section class="about" id="about">
-<div class="container">
+<!-- ABOUT -->
 
-<div class="section-title">
-<h2>About Me</h2>
-<p>Surveillance & Security Technology Professional</p>
-</div>
+<section id="about">
 
-<div class="about-grid">
+    <div class="container">
 
-<div>
-<h3>Nand Kishor</h3>
+        <div class="section-title">
 
-<p>
-I am a surveillance and security systems professional with 8+ years
-of experience in CCTV, access control, infrastructure projects,
-project execution, commissioning, vendor coordination and client
-management.
-</p>
+            <small>About Smart Technology</small>
 
-<br>
+            <h2>Surveillance & Security Technology</h2>
 
-<p>
-My experience includes CCTV surveillance, IP and analog systems,
-NVR/DVR, VMS, ONVIF integration, AI video analytics, central control
-rooms, solar CCTV and 4G-based remote monitoring solutions.
-</p>
-</div>
+            <p>
+                Technology-focused solutions for surveillance,
+                monitoring, security infrastructure and intelligent
+                video management.
+            </p>
 
-<div class="about-box">
+        </div>
 
-<h3>Professional Focus</h3>
 
-<p>
-✔ CCTV Surveillance & Security Systems
-</p>
+        <div class="about-grid">
 
-<p>
-✔ AI Video Analytics & Intelligent Monitoring
-</p>
+            <div class="about-text">
 
-<p>
-✔ VMS & Central Control Room
-</p>
+                <h3>Professional Surveillance Solutions</h3>
 
-<p>
-✔ Project Execution & Commissioning
-</p>
+                <p>
+                    Smart Technology focuses on the design,
+                    implementation, integration and management of
+                    modern surveillance and security systems.
+                </p>
 
-<p>
-✔ Vendor & Client Coordination
-</p>
+                <p>
+                    Our solution areas cover CCTV surveillance,
+                    Railway VSS, Smart City surveillance, Airport
+                    security, Toll operations, Warehouse monitoring,
+                    AI video analytics and centralized command
+                    centre solutions.
+                </p>
 
-<p>
-✔ Solar & 4G Remote CCTV Solutions
-</p>
+                <p>
+                    We combine surveillance technology, connectivity,
+                    video management and intelligent analytics to
+                    support reliable monitoring across critical
+                    infrastructure and distributed locations.
+                </p>
 
-</div>
+            </div>
 
-</div>
 
-<div class="stats">
+            <div class="about-box">
 
-<div class="stat">
-<strong>8+</strong>
-Years Experience
-</div>
+                <h3>Core Capabilities</h3>
 
-<div class="stat">
-<strong>CCTV</strong>
-Surveillance
-</div>
+                <ul class="check-list">
 
-<div class="stat">
-<strong>AI</strong>
-Video Analytics
-</div>
+                    <li>CCTV Surveillance Systems</li>
 
-</div>
+                    <li>Railway VSS & Station Surveillance</li>
 
-</div>
+                    <li>Smart City Surveillance</li>
+
+                    <li>Airport Security & Monitoring</li>
+
+                    <li>Toll Plaza & Operations Monitoring</li>
+
+                    <li>Warehouse & Logistics Surveillance</li>
+
+                    <li>AI Video Analytics</li>
+
+                    <li>VMS & Command Centre</li>
+
+                    <li>Solar & 4G Remote CCTV</li>
+
+                    <li>Project Execution & Commissioning</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
-<section id="services">
-<div class="container">
+<!-- INDUSTRIES -->
 
-<div class="section-title">
-<h2>Our Services</h2>
-<p>Professional Surveillance & Security Solutions</p>
-</div>
+<section class="industries" id="industries">
 
-<div class="services-grid">
+    <div class="container">
 
-<div class="card">
-<div class="icon">📹</div>
-<h3>CCTV Surveillance</h3>
-<p>
-IP CCTV, Analog CCTV, NVR/DVR, camera installation,
-configuration and remote monitoring.
-</p>
-</div>
+        <div class="section-title">
 
-<div class="card">
-<div class="icon">🤖</div>
-<h3>AI Video Analytics</h3>
-<p>
-Human and vehicle detection, intrusion, line crossing,
-loitering, fire/smoke and intelligent video monitoring.
-</p>
-</div>
+            <small>Industries</small>
 
-<div class="card">
-<div class="icon">🖥️</div>
-<h3>VMS & Control Room</h3>
-<p>
-Centralized VMS, live monitoring, playback, alerts,
-health monitoring and control room solutions.
-</p>
-</div>
+            <h2>Surveillance Across Critical Environments</h2>
 
-<div class="card">
-<div class="icon">☀️</div>
-<h3>Solar CCTV</h3>
-<p>
-Solar-powered CCTV systems for locations with limited
-or unavailable grid electricity.
-</p>
-</div>
+            <p>
+                Scalable surveillance and security technology
+                for infrastructure, transportation, industrial
+                and commercial environments.
+            </p>
 
-<div class="card">
-<div class="icon">📡</div>
-<h3>4G Remote Monitoring</h3>
-<p>
-4G SIM-based connectivity for remote CCTV live view,
-alerts and monitoring.
-</p>
-</div>
+        </div>
 
-<div class="card">
-<div class="icon">🔐</div>
-<h3>Access Control</h3>
-<p>
-Security access control solutions for offices,
-warehouses and critical infrastructure.
-</p>
-</div>
 
-</div>
-</div>
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="icon">🚆</div>
+
+                <h3>Railway & VSS</h3>
+
+                <p>
+                    Railway station surveillance, VSS,
+                    CCTV monitoring, control room integration
+                    and centralized video management.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🏙️</div>
+
+                <h3>Smart City</h3>
+
+                <p>
+                    City surveillance, centralized monitoring,
+                    intelligent analytics, incident monitoring
+                    and command centre solutions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">✈️</div>
+
+                <h3>Airport Security</h3>
+
+                <p>
+                    CCTV surveillance, monitoring,
+                    video management and integrated security
+                    infrastructure for airport environments.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🛣️</div>
+
+                <h3>Toll Operations</h3>
+
+                <p>
+                    CCTV monitoring, vehicle surveillance,
+                    ANPR and operational monitoring for
+                    toll and highway environments.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🏭</div>
+
+                <h3>Warehouse & Logistics</h3>
+
+                <p>
+                    Warehouse CCTV, remote monitoring,
+                    AI analytics, solar CCTV and 4G-based
+                    surveillance solutions.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">🏢</div>
+
+                <h3>Critical Infrastructure</h3>
+
+                <p>
+                    Integrated security and surveillance
+                    solutions for commercial, industrial
+                    and critical infrastructure locations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
-<section class="experience" id="experience">
-<div class="container">
+<!-- SOLUTIONS -->
 
-<div class="section-title">
-<h2>Experience</h2>
-<p>Project Management & Surveillance Operations</p>
-</div>
+<section id="solutions">
 
-<div class="timeline">
+    <div class="container">
 
-<div class="timeline-item">
-<h3>Surveillance Management</h3>
-<p>
-Management of CCTV surveillance operations, monitoring,
-system health and security requirements.
-</p>
-</div>
+        <div class="section-title">
 
-<div class="timeline-item">
-<h3>Project Execution & Commissioning</h3>
-<p>
-Planning, installation supervision, configuration,
-testing, commissioning and handover of CCTV systems.
-</p>
-</div>
+            <small>Solutions</small>
 
-<div class="timeline-item">
-<h3>Vendor & Client Coordination</h3>
-<p>
-Coordination with vendors, clients, operations teams,
-site teams and technical stakeholders.
-</p>
-</div>
+            <h2>Integrated Security Solutions</h2>
 
-<div class="timeline-item">
-<h3>Documentation & Reporting</h3>
-<p>
-BOQ, DPR, WIR, testing reports, HOTO documentation
-and project status reporting.
-</p>
-</div>
+            <p>
+                End-to-end surveillance technologies designed
+                for centralized monitoring and intelligent security.
+            </p>
 
-</div>
+        </div>
 
-</div>
+
+        <div class="solution-grid">
+
+            <div class="solution">
+
+                <div class="icon">📹</div>
+
+                <h3>CCTV Surveillance</h3>
+
+                <p>
+                    IP and analog CCTV, NVR/DVR,
+                    PTZ and remote surveillance systems.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">🎥</div>
+
+                <h3>VSS Solutions</h3>
+
+                <p>
+                    Video Surveillance Systems for
+                    transportation and critical infrastructure.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">🖥️</div>
+
+                <h3>VMS</h3>
+
+                <p>
+                    Centralized live view, playback,
+                    alerts, recording and health monitoring.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">🤖</div>
+
+                <h3>AI Video Analytics</h3>
+
+                <p>
+                    Human, vehicle, intrusion, line crossing,
+                    loitering, fire and intelligent analytics.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">🚘</div>
+
+                <h3>ANPR & Vehicle Analytics</h3>
+
+                <p>
+                    Vehicle detection, classification,
+                    number plate recognition and monitoring.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">🖥️</div>
+
+                <h3>Command Centre</h3>
+
+                <p>
+                    Centralized monitoring, video wall,
+                    alerts, incident management and reporting.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">☀️</div>
+
+                <h3>Solar CCTV</h3>
+
+                <p>
+                    Solar-powered surveillance for remote
+                    locations and areas with limited power.
+                </p>
+
+            </div>
+
+
+            <div class="solution">
+
+                <div class="icon">📡</div>
+
+                <h3>4G / Remote Monitoring</h3>
+
+                <p>
+                    Remote CCTV connectivity through
+                    4G/5G networks and centralized monitoring.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- TECHNOLOGY -->
+
+<section class="technology" id="technology">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>Technology</small>
+
+            <h2>Security & Surveillance Technologies</h2>
+
+            <p>
+                Technology capabilities supporting modern
+                surveillance and integrated security projects.
+            </p>
+
+        </div>
+
+
+        <div class="tech-list">
+
+            <span class="tech">IP CCTV</span>
+
+            <span class="tech">Analog CCTV</span>
+
+            <span class="tech">VSS</span>
+
+            <span class="tech">VMS</span>
+
+            <span class="tech">NVR / DVR</span>
+
+            <span class="tech">ONVIF</span>
+
+            <span class="tech">AI Video Analytics</span>
+
+            <span class="tech">ANPR</span>
+
+            <span class="tech">PTZ Cameras</span>
+
+            <span class="tech">Video Wall</span>
+
+            <span class="tech">Command Centre</span>
+
+            <span class="tech">Edge AI</span>
+
+            <span class="tech">Remote Monitoring</span>
+
+            <span class="tech">4G / 5G Connectivity</span>
+
+            <span class="tech">Solar CCTV</span>
+
+            <span class="tech">Access Control</span>
+
+            <span class="tech">Centralized Monitoring</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT / EXPERIENCE -->
 
 <section id="projects">
-<div class="container">
 
-<div class="section-title">
-<h2>Projects & Solutions</h2>
-<p>Selected Surveillance & Security Projects</p>
-</div>
+    <div class="container">
 
-<div class="projects-grid">
+        <div class="section-title">
 
-<div class="card">
-<h3>🚉 Railway Station CCTV</h3>
-<p>
-Security CCTV surveillance projects for railway stations,
-including monitoring and security infrastructure.
-</p>
-</div>
+            <small>Projects & Experience</small>
 
-<div class="card">
-<h3>🏭 Warehouse Surveillance</h3>
-<p>
-Warehouse CCTV surveillance, remote monitoring and
-centralized security operations.
-</p>
-</div>
+            <h2>Industry Experience & Solution Areas</h2>
 
-<div class="card">
-<h3>🤖 AI Analytics Deployment</h3>
-<p>
-AI-based video analytics for human, vehicle, intrusion,
-fire/smoke and operational monitoring.
-</p>
-</div>
+            <p>
+                Surveillance technology experience across
+                transportation, infrastructure and industrial
+                environments.
+            </p>
 
-<div class="card">
-<h3>☀️ Solar CCTV Solutions</h3>
-<p>
-Solar-based CCTV systems for remote warehouses and
-locations with power limitations.
-</p>
-</div>
+        </div>
 
-<div class="card">
-<h3>🖥️ Central Control Room</h3>
-<p>
-Centralized live monitoring, VMS, alerts, playback and
-camera health monitoring.
-</p>
-</div>
 
-<div class="card">
-<h3>🔗 CCTV Integration</h3>
-<p>
-Multi-brand CCTV integration using NVR/DVR, VMS,
-ONVIF and remote connectivity.
-</p>
-</div>
+        <div class="project-grid">
 
-</div>
-</div>
+
+            <div class="project">
+
+                <h3>🚆 Railway VSS & Station Surveillance</h3>
+
+                <p>
+                    Surveillance system planning, CCTV monitoring,
+                    VSS, centralized monitoring, control room
+                    operations, system integration and project
+                    execution for railway environments.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🏙️ Smart City Surveillance</h3>
+
+                <p>
+                    City-wide surveillance concepts including
+                    CCTV, AI video analytics, centralized VMS,
+                    command centres and incident monitoring.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>✈️ Airport Surveillance</h3>
+
+                <p>
+                    Integrated CCTV and security surveillance
+                    concepts for airport environments including
+                    centralized monitoring and video management.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🛣️ Toll Operations</h3>
+
+                <p>
+                    Surveillance and operational monitoring
+                    solutions including CCTV, vehicle monitoring,
+                    ANPR and centralized video management.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🏭 Warehouse Surveillance</h3>
+
+                <p>
+                    Warehouse security solutions using CCTV,
+                    AI analytics, remote monitoring, 4G
+                    connectivity and solar-powered surveillance.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🖥️ Central Command & Control Centre</h3>
+
+                <p>
+                    Centralized monitoring architecture with
+                    VMS, live view, playback, alerts, video wall,
+                    camera health monitoring and reporting.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 
-<section id="skills">
-<div class="container">
+<!-- SERVICES -->
 
-<div class="section-title">
-<h2>Technical Skills</h2>
-<p>Security & Surveillance Technologies</p>
-</div>
+<section id="services">
 
-<div class="skills-grid">
+    <div class="container">
 
-<div class="card">CCTV Surveillance</div>
-<div class="card">IP CCTV</div>
-<div class="card">Analog CCTV</div>
-<div class="card">AI Video Analytics</div>
-<div class="card">VMS</div>
-<div class="card">NVR / DVR</div>
-<div class="card">ONVIF</div>
-<div class="card">Access Control</div>
-<div class="card">Central Control Room</div>
-<div class="card">Remote Monitoring</div>
-<div class="card">Solar CCTV</div>
-<div class="card">4G Connectivity</div>
-<div class="card">Project Execution</div>
-<div class="card">Commissioning</div>
-<div class="card">Vendor Coordination</div>
-<div class="card">BOQ / DPR / WIR</div>
+        <div class="section-title">
 
-</div>
+            <small>Services</small>
 
-</div>
+            <h2>Project & Technical Services</h2>
+
+            <p>
+                Support from system planning through
+                implementation, commissioning and operations.
+            </p>
+
+        </div>
+
+
+        <div class="service-list">
+
+            <div class="service">
+
+                <h3>Design & Engineering</h3>
+
+                <p>
+                    Surveillance system design,
+                    architecture, camera planning and
+                    solution engineering.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>SITC</h3>
+
+                <p>
+                    Supply, installation, testing and
+                    commissioning of surveillance systems.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Installation & Configuration</h3>
+
+                <p>
+                    Camera installation, NVR/DVR configuration,
+                    networking and system setup.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>System Integration</h3>
+
+                <p>
+                    CCTV, VMS, ONVIF, analytics and
+                    centralized monitoring integration.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Testing & Commissioning</h3>
+
+                <p>
+                    System testing, validation, commissioning,
+                    documentation and handover support.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Project Management</h3>
+
+                <p>
+                    Site coordination, vendor management,
+                    project execution and technical reporting.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>AMC & O&M</h3>
+
+                <p>
+                    Preventive maintenance, system health
+                    monitoring and operational support.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Remote Monitoring</h3>
+
+                <p>
+                    Centralized remote monitoring, alerts,
+                    camera health and incident visibility.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h3>Documentation</h3>
+
+                <p>
+                    BOQ, DPR, WIR, testing reports,
+                    HOTO and project status documentation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- PROFESSIONAL PROFILE -->
+
+<section class="profile">
+
+    <div class="container profile-grid">
+
+        <div>
+
+            <small>Professional Expertise</small>
+
+            <h2>Surveillance & Security Technology</h2>
+
+            <p>
+                Smart Technology combines practical surveillance
+                experience with modern security technologies,
+                project execution and centralized monitoring.
+            </p>
+
+            <p>
+                The focus is on scalable, reliable and technology-
+                driven surveillance solutions for distributed
+                and critical environments.
+            </p>
+
+        </div>
+
+
+        <div class="experience-box">
+
+            <div class="experience-number">8+</div>
+
+            <h3>Years of Professional Experience</h3>
+
+            <p>
+                CCTV Surveillance • Security Systems •
+                VSS • VMS • AI Analytics • Control Room •
+                Project Execution • Commissioning
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
-<div class="container">
 
-<div class="section-title">
-<h2 style="color:white;">Contact Me</h2>
-<p style="color:#cbd8e8;">Let's connect for surveillance & security projects</p>
-</div>
+    <div class="container">
 
-<div class="contact-grid">
+        <div class="section-title">
 
-<div class="contact-card">
+            <small>Contact</small>
 
-<h3>Nand Kishor</h3>
+            <h2>Let's Discuss Your Surveillance Requirement</h2>
 
-<p>Manager – Head Surveillance</p>
+            <p>
+                For CCTV, VSS, VMS, AI analytics, Command Centre,
+                Warehouse, Railway, Smart City or remote
+                surveillance requirements, get in touch.
+            </p>
 
-<p>📞 <a href="tel:+916376720848">6376720848</a></p>
+        </div>
 
-<p>✉ <a href="mailto:nand.kishor@staragri.com">
-nand.kishor@staragri.com
-</a></p>
 
-<p>
-📍 Mission Compound, Ajmer Road,<br>
-Jaipur, Rajasthan – 302001
-</p>
+        <div class="contact-grid">
 
-</div>
 
-<div class="contact-card">
+            <div class="contact-box">
 
-<h3>Get in Touch</h3>
+                <h3>Smart Technology</h3>
 
-<p>
-For CCTV surveillance, AI analytics, VMS,
-control room, solar CCTV and remote monitoring
-requirements, feel free to contact me.
-</p>
+                <p>
+                    Surveillance & Security Technology Solutions
+                </p>
 
-<br>
 
-<a class="btn"
-href="https://wa.me/916376720848"
-target="_blank">
-💬 Contact on WhatsApp
-</a>
+                <div class="contact-item">
 
-</div>
+                    <strong>Phone</strong>
 
-</div>
+                    <a href="tel:+916376720848">
+                        +91 63767 20848
+                    </a>
 
-</div>
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Email</strong>
+
+                    <a href="mailto:nand.kishor@staragri.com">
+                        nand.kishor@staragri.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>Location</strong>
+
+                    Jaipur, Rajasthan, India
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <h3>Connect With Us</h3>
+
+                <p>
+                    Discuss your surveillance, CCTV,
+                    VMS, AI analytics or security
+                    infrastructure requirement.
+                </p>
+
+                <br>
+
+                <div class="buttons">
+
+                    <a
+                        href="tel:+916376720848"
+                        class="btn btn-primary">
+                        📞 Call
+                    </a>
+
+                    <a
+                        href="https://wa.me/916376720848"
+                        target="_blank"
+                        class="btn btn-primary">
+                        💬 WhatsApp
+                    </a>
+
+                    <a
+                        href="mailto:nand.kishor@staragri.com"
+                        class="btn btn-outline"
+                        style="color:#071a33; border-color:#071a33;">
+                        ✉ Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
-© 2026 Smart Technology | Nand Kishor – Manager, Head Surveillance
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <h3>Smart Technology</h3>
+
+                <p>
+                    Surveillance • Security • VSS • VMS •
+                    AI Analytics • Command Centre
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#about">About</a>
+
+                <a href="#solutions">Solutions</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Smart Technology. All Rights Reserved.
+
+        </div>
+
+    </div>
 
 </footer>
 
-
-<a class="whatsapp"
-href="https://wa.me/916376720848"
-target="_blank">
-💬 WhatsApp
-</a>
 
 </body>
 </html>
